@@ -1,8 +1,8 @@
 import P from 'prop-types';
 import React, { useCallback, useState } from 'react';
 
-const Button = React.memo(function Button({ incrementCounter }) {
-  console.log('Button rendeizado');
+const Button = React.memo(({ incrementCounter }) => {
+  console.log('Componente filho renderizado');
 
   return <button onClick={() => incrementCounter(10)}>+</button>;
 });
