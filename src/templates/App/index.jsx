@@ -1,6 +1,6 @@
-import './App.css';
+import './styles.css';
 
-import { ExampleUseReducer } from './hooks/useReducer';
+import { ExampleUseInterval } from '../../examples/use-interval';
 
 export const App = () => {
   return (
@@ -11,7 +11,9 @@ export const App = () => {
       {/* <ExampleUseMemo /> */}
       {/* <ExampleUseRef /> */}
       {/* <ExampleUseContext /> */}
-      <ExampleUseReducer />
+      {/* <ExampleUseReducer /> */}
+      {/* <ExampleReducerWithContext /> */}
+      <ExampleUseInterval />
     </div>
   );
 };
