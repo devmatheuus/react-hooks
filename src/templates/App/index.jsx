@@ -1,19 +1,24 @@
 import './styles.css';
 
-import { ExampleUseInterval } from '../../examples/use-interval';
+import { CounterProvider } from '../../contexts/Counter';
+import { PostsProvider } from '../../contexts/Posts';
+import { ExamplePosts } from '../../examples/posts-example';
 
 export const App = () => {
   return (
-    <div className="App">
-      {/* <ExampleUseState /> */}
-      {/* <ExampleUseEffect /> */}
-      {/* <ExampleUseCallback /> */}
-      {/* <ExampleUseMemo /> */}
-      {/* <ExampleUseRef /> */}
-      {/* <ExampleUseContext /> */}
-      {/* <ExampleUseReducer /> */}
-      {/* <ExampleReducerWithContext /> */}
-      <ExampleUseInterval />
-    </div>
+    <CounterProvider>
+      <PostsProvider>
+        {/* <ExampleUseState /> */}
+        {/* <ExampleUseEffect /> */}
+        {/* <ExampleUseCallback /> */}
+        {/* <ExampleUseMemo /> */}
+        {/* <ExampleUseRef /> */}
+        {/* <ExampleUseContext /> */}
+        {/* <ExampleUseReducer /> */}
+        {/* <ExampleReducerWithContext /> */}
+        {/* <ExampleUseInterval /> */}
+        <ExamplePosts />
+      </PostsProvider>
+    </CounterProvider>
   );
 };
