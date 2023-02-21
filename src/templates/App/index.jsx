@@ -2,7 +2,7 @@ import './styles.css';
 
 import { CounterProvider } from '../../contexts/Counter';
 import { PostsProvider } from '../../contexts/Posts';
-import { ExampleUseLayoutEffect } from '../../example-hooks/useLayoutEffect';
+import { ExampleUseImperativeHandle } from '../../examples/example-use-imperative-handle';
 
 export const App = () => {
   return (
@@ -19,7 +19,8 @@ export const App = () => {
         {/* <ExampleUseInterval /> */}
         {/* <ExamplePosts /> */}
         {/* <ExampleUseAsync /> */}
-        <ExampleUseLayoutEffect />
+        {/* <ExampleUseLayoutEffect /> */}
+        <ExampleUseImperativeHandle />
       </PostsProvider>
     </CounterProvider>
   );
