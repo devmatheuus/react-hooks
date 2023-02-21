@@ -2,7 +2,7 @@ import './styles.css';
 
 import { CounterProvider } from '../../contexts/Counter';
 import { PostsProvider } from '../../contexts/Posts';
-import { ExampleUseAsync } from '../../examples/example-use-async';
+import { ExampleUseLayoutEffect } from '../../example-hooks/useLayoutEffect';
 
 export const App = () => {
   return (
@@ -18,7 +18,8 @@ export const App = () => {
         {/* <ExampleReducerWithContext /> */}
         {/* <ExampleUseInterval /> */}
         {/* <ExamplePosts /> */}
-        <ExampleUseAsync />
+        {/* <ExampleUseAsync /> */}
+        <ExampleUseLayoutEffect />
       </PostsProvider>
     </CounterProvider>
   );
