@@ -2,7 +2,7 @@ import './styles.css';
 
 import { CounterProvider } from '../../contexts/Counter';
 import { PostsProvider } from '../../contexts/Posts';
-import { ExampleCompoundComponent } from '../../examples/example-compound-components';
+import { ExampleComponent } from '../../examples/example-lazy-component';
 
 export const App = () => {
   return (
@@ -24,7 +24,8 @@ export const App = () => {
         {/* <ExampleUseMediaQuery /> */}
         {/* <ExampleReactFlow /> */}
         {/* <ExampleErrorBoundaries /> */}
-        <ExampleCompoundComponent />
+        {/* <ExampleCompoundComponent /> */}
+        <ExampleComponent />
       </PostsProvider>
     </CounterProvider>
   );
