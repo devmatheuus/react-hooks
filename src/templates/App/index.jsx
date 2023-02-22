@@ -2,7 +2,7 @@ import './styles.css';
 
 import { CounterProvider } from '../../contexts/Counter';
 import { PostsProvider } from '../../contexts/Posts';
-import { ExampleReactFlow } from '../../examples/example-react-flow';
+import { ExampleErrorBoundaries } from '../../examples/example-error-boundary';
 
 export const App = () => {
   return (
@@ -22,7 +22,8 @@ export const App = () => {
         {/* <ExampleUseLayoutEffect /> */}
         {/* <ExampleUseImperativeHandle /> */}
         {/* <ExampleUseMediaQuery /> */}
-        <ExampleReactFlow />
+        {/* <ExampleReactFlow /> */}
+        <ExampleErrorBoundaries />
       </PostsProvider>
     </CounterProvider>
   );
