@@ -2,7 +2,7 @@ import './styles.css';
 
 import { CounterProvider } from '../../contexts/Counter';
 import { PostsProvider } from '../../contexts/Posts';
-import { ExampleUseImperativeHandle } from '../../examples/example-use-imperative-handle';
+import { ExampleUseMediaQuery } from '../../examples/example-use-media-query';
 
 export const App = () => {
   return (
@@ -20,7 +20,8 @@ export const App = () => {
         {/* <ExamplePosts /> */}
         {/* <ExampleUseAsync /> */}
         {/* <ExampleUseLayoutEffect /> */}
-        <ExampleUseImperativeHandle />
+        {/* <ExampleUseImperativeHandle /> */}
+        <ExampleUseMediaQuery />
       </PostsProvider>
     </CounterProvider>
   );
