@@ -2,7 +2,7 @@ import './styles.css';
 
 import { CounterProvider } from '../../contexts/Counter';
 import { PostsProvider } from '../../contexts/Posts';
-import { ExampleUseMediaQuery } from '../../examples/example-use-media-query';
+import { ExampleReactFlow } from '../../examples/example-react-flow';
 
 export const App = () => {
   return (
@@ -21,7 +21,8 @@ export const App = () => {
         {/* <ExampleUseAsync /> */}
         {/* <ExampleUseLayoutEffect /> */}
         {/* <ExampleUseImperativeHandle /> */}
-        <ExampleUseMediaQuery />
+        {/* <ExampleUseMediaQuery /> */}
+        <ExampleReactFlow />
       </PostsProvider>
     </CounterProvider>
   );
